@@ -33,9 +33,11 @@
         </script>
     </head>
     <body>
-        <h1>Practice HTML</h1>
-        <h2>We will learn everything from scratch</h2>
-        <p class="one"> i learned that in a paragraph we have a <b>margin</b> start and a <b>margin</b>e end</p>
+        <div>
+            <h1>Practice HTML</h1>
+            <h2>We will learn everything from scratch</h2>
+        </div>
+        <p class="one"> i learned that in a paragraph <br> we have a <b>margin</b> start and <br> a <b>margin</b>e end</p>
         <p hidden> and it's something awesome, and i am glad to learn new stuff about <b>HTML</b></p>
         <p> I wanna try i that stands for <i> Italic </i>symbol and em that stands for <em> Emphatized</em> also we can use mark for <mark> highlighing purpose</mark></p>
         <h3> This is a heading 3 to test u <u> underline</u> and small <small> welcome</small></h3>
@@ -46,5 +48,79 @@
             <!-- <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100"> -->
         </a>
         This is my first HTML page.
+
+        <img src="https://www.w3schools.com/spaces/dynamicspaces.gif" alt="W3Schools.com">
+
+        <!-- 
+            ul = unordered list
+            li = list item
+            ol = ordered list
+         -->
+         <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>
+                    Item 3
+                    <!-- NESTED ul -->
+                    <ul>
+                        <li>
+                            Item 3.1
+                            <ul>
+                                <li>Item 3.1.1</li>
+                                <li>Item 3.1.2</li>
+                                <li>Item 3.1.3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+         </ul>
+         <ol>
+            ORDERED list
+            <li> Name</li>
+            <li> Last Name</li>
+            <li> Age</li>
+         </ol>
+
+         <!-- 
+            dl = Description List
+            dt = Term
+            dd = Description Of the term
+          -->
+          <dl>
+            <dt> HTML</dt>
+            <dd> Hyper Text Markup Language</dd>
+            <dd> it's not a coding language</dd>
+          </dl>
+
+
+          <!-- 
+            thead = table head
+            tbody = table body
+            tfoot = table foot
+           -->
+           <table>
+                <thead>
+                    <tr>
+                        <th> Name</th>
+                        <th> Last Name</th>
+                        <th> Age</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td> Abdo</td>
+                        <td> Oumad</td>
+                        <td> 21</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Hamza</td>
+                        <td> 21</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Yassine</td>
+                        <td> 21</td>
+                    </tr>
+            </tbody>
+        </table>
     </body>
 </html>
