@@ -9,12 +9,104 @@
         <h1>
             This is another file of html for practicing purpose
         </h1>
-        <form>
+        <form action="hello.php" method="GET">
+            <input type="hidden" value="f9892225355">
             <label>Username</label>
-            <input type="text" required placeholder="Username">
+            <input type="text" required placeholder="Username" name="user" autofocus>
+            <br>
+            <div>
+                <label>School</label>
+                <input type="text" required placeholder="School" name="school"  value="1337" readonly>
+            </div>
             <label>Password</label>
-            <input type="password" required placeholder="Password">
-            <input type="submit" value="Send">
+            <input type="password" required placeholder="Password" name="password" minlength="10" maxlength="17">
+            <br>
+            <div>
+                <label>Color</label>
+                <input type="color" name="color">
+            </div>
+            <br>
+            <div>
+                <label>Date</label>
+                <input type="date" name="date">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Range</label>
+                <input type="range" name="range" min="0" max="100" step="20" value="40">
+            </div>
+            <br>
+            <div>
+                <Label>Search</Label>
+                <input type="search" name="search">
+            </div>
+            <br>
+            <div>
+                <label>Number</label>
+                <input type="number" name="number" min="-79" step="20">
+            </div>
+            <hr>
+            <div>
+                <input id="Windows" type="radio" name="os" value="Windows" checked>
+                <label for="Windows">Windows</label>
+            </div>
+            <div>
+                <input id="Linux" type="radio" name="os" value="Linux">
+                <label for="Linux">Linux</label>
+            </div>
+            <div>
+                <input id="Mac" type="radio" name="os" value="Mac">
+                <label for="Mac">Mac</label>
+            <hr>
+            <div>
+                <input id="Windows1" type="checkbox" name="os" value="Windows" checked>
+                <label for="Windows1">Windows</label>
+            </div>
+            <div>
+                <input id="Linux1" type="checkbox" name="os" value="Linux">
+                <label for="Linux1">Linux</label>
+            </div>
+            <div>
+                <input id="Mac1" type="checkbox" name="os" value="Mac">
+                <label for="Mac1">Mac</label>
+            </div>
+            <div>
+                <label for="book">Choose book:</label>
+                <select id="book" name="book">
+                    <optgroup label="romantic">
+                        <option value="book1">Book 1</option>
+                        <option value="book2">Book 2</option>
+                        <option value="book3">Book 3</option>
+                    </optgroup>
+                    <optgroup label="action">
+                        <option value="book4">Book 4</option>
+                        <option value="book5" selected>Book 5</option>
+                        <option value="book6">Book 6</option>
+                    </optgroup>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <label>Phone</label>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div>
+                <label>File</label>
+                <input type="file" name="file">
+            </div>
+            <div>
+                <label>Comment</label>
+                <textarea name="comment" rows="5" cols="40" placeholder="Comment"></textarea>
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send">
+            </div>
         </form>
     </body>
 </html>
