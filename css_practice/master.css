@@ -1,0 +1,54 @@
+.my-p {
+    background-color:cadetblue;
+    color: rgb(33,33,250);
+    /* background-image: "../../screenshot.png" */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    /* background-size:cover; */
+    background-size: contain;
+    padding: 25px 10px;
+    margin: 10%;
+    margin-left: 10%; /* or use auto */
+    margin-right: 10%; /* same here */
+    width: 80%;
+    border: 10px;
+    border-color: yellowgreen;
+    border-style: double;
+    outline: cadetblue solid 10px;
+}
+
+div
+{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+
+}
+
+/* span
+{
+    background-color: aquamarine;
+    padding: 20px;
+    display: block;
+    width: 200px;
+    height: auto;
+} */
+
+span
+{
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 100px;
+}
+
+.first
+{
+    visibility: hidden;
+    /* display: none; */
+}
