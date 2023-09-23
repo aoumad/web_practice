@@ -1,3 +1,23 @@
+import {Invoice} from './classes/invoice.js';
+
+const invOne = new Invoice('Abderazzak', 'practicing typescript', 250);
+const invTwo = new Invoice('School project', 'a web project', 367);
+
+console.log(invOne, invTwo);
+
+let invoices : Invoice[] = [];
+
+invoices.push(invOne);
+invoices.push(invTwo);
+
+invoices.forEach(inv =>
+    {
+        console.log(inv.client, inv.amount, inv.format());
+    });
+
+invOne.client = 'Hamza'; // we can change the value of an instance vairable when we need to 
+// I can't change the amount variable since it's readonly
+
 const anchor = document.querySelector('a')!;
 if(anchor) {
   console.log(anchor.href);
