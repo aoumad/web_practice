@@ -1,11 +1,11 @@
 import { useLocation } from "react-router";
-import { posts } from "../data";
+import { posts } from "../data.js";
 
 const Post = () => {
   const location = useLocation();
+    // this react router hook returns an object that comtains info of URL location
+  // `location` has properties like `pathname` which provide details about htev URL
   const path = location.pathname.split("/")[2];
-
-console.log(location);
 
   const post = posts.find((p) => p.id.toString() === path);
 

@@ -5,11 +5,11 @@ const Home = () =>
 {
     return (
         <div className="home">
-            {posts.map(posts=>(
-                <Card posts={posts}/>
-            ))}
-        </div>
+        {posts.map(post=>(
+            <Card key={post.id} post={post}/>
+        ))}
+    </div>
     )
 }
 
-export default Home
+export default Home;
